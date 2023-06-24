@@ -10,7 +10,7 @@ namespace eumatamboExamen
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new Resumen());
         }
 
         protected override void OnStart()

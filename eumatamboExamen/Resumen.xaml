@@ -4,8 +4,144 @@
              x:Class="eumatamboExamen.Resumen">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lblUsuario" FontSize="14" TextColor="Red" HorizontalTextAlignment="End"/>
-            <Label Text="REGISTRO" FontSize="24" HorizontalTextAlignment="Center"/>
+
+            <Label 
+                    x:Name="lblUsuario" 
+                    TextColor="Red"
+                    FontSize="16"
+                    HorizontalTextAlignment="Center"    
+                />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label 
+                    Text="NOMBRE" 
+                    FontSize="20" 
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtNombre"
+                    FontSize="20" 
+                    Grid.Row="0" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="APELLIDO" 
+                    FontSize="20" 
+                    Grid.Row="1" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtApellido"
+                    FontSize="20" 
+                    Grid.Row="1" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="Edad" 
+                    FontSize="20" 
+                    Grid.Row="2" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtEdad"
+                    FontSize="20" 
+                    Grid.Row="2" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="FECHA" 
+                    FontSize="20" 
+                    Grid.Row="3" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtFecha"
+                    FontSize="20" 
+                    Grid.Row="3" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="PAIS" 
+                    FontSize="20" 
+                    Grid.Row="4" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtPais"
+                    FontSize="20" 
+                    Grid.Row="4" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="CIUDAD" 
+                    FontSize="20" 
+                    Grid.Row="5" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtCiudad"
+                    FontSize="20" 
+                    Grid.Row="5" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="MONTO INICIAL" 
+                    FontSize="20" 
+                    Grid.Row="6" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtMontoInicial"
+                    FontSize="20" 
+                    Grid.Row="6" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="PAGO MENSUAL" 
+                    FontSize="20" 
+                    Grid.Row="7" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtPagoMensual"
+                    FontSize="20" 
+                    Grid.Row="7" 
+                    Grid.Column="1"
+                 />
+                <Label 
+                    Text="PAGO TOTAL" 
+                    FontSize="20" 
+                    Grid.Row="8" 
+                    Grid.Column="0"
+                 />
+                <Label 
+                    x:Name="txtPagoTotal"
+                    FontSize="20" 
+                    Grid.Row="8" 
+                    Grid.Column="1"
+                 />
+            </Grid>
+
+            <Button
+                x:Name="btnSalir"
+                Text="SALIR"
+                Clicked="btnSalir_Clicked"
+            />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
