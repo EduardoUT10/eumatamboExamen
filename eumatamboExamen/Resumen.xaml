@@ -6,8 +6,8 @@
         <StackLayout>
 
             <Label 
-                      Text="REGISTRO"
-                      FontSize="20" 
+                      Text="Resumen"
+                     
                     x:Name="lblUsuario" 
                     TextColor="Red"
                     FontSize="16"
