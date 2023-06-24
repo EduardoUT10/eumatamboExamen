@@ -55,10 +55,10 @@
                 </Picker>
                 <Entry x:Name="txtMontoInicial" Placeholder="Monto Inicial" TextChanged="txtMontoInicial_TextChanged" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
                 <Entry x:Name="txtMontoMensual" Placeholder="Monto Mensual" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
-             <Button x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked" Grid.Row="5" Grid.Column="1"/> 
+             <!--   <Button x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked" Grid.Row="5" Grid.Column="1"/> -->
 
             </Grid>
-            <Grid>
+ <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>

@@ -15,7 +15,6 @@ namespace eumatamboExamen
         public Resumen()
         {
             InitializeComponent();
-            lblUsuario.Text = "USUARIO CONECTADO: ";
         }
     }
 }
