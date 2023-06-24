@@ -12,7 +12,7 @@ namespace eumatamboExamen
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Resumen : ContentPage
     {
-        double MontoInicial;
+        double montoInicial;
         double PagoMensual;
         public Resumen(string usuario, string apellido, string edad, string fecha, string ciudad, string pais, string montoInicial, string pagoMensual)
         {
@@ -26,7 +26,7 @@ namespace eumatamboExamen
             txtPais.Text = pais;
             txtMontoInicial.Text = montoInicial;
             txtPagoMensual.Text = pagoMensual;
-            this.MontoInicial = Convert.ToDouble(montoInicial);
+            this.montoInicial = Convert.ToDouble(montoInicial);
             this.PagoMensual = Convert.ToDouble(pagoMensual);
             txtPagoTotal.Text = (this.PagoMensual * 4).ToString();
         }

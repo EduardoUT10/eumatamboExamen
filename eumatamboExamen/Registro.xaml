@@ -8,6 +8,7 @@
             <Label x:Name="lblUsuario" FontSize="16" TextColor="Red" HorizontalTextAlignment="End"/>
             <Label Text="REGISTRO" FontSize="20" HorizontalTextAlignment="Center"/>
 
+
             <Label/>
 
             <Grid>
@@ -30,7 +31,6 @@
                 <Label Text="Ciudad" Grid.Row="2" Grid.Column="0"/>
                 <Label Text="Monto Inicial" Grid.Row="3" Grid.Column="0"/>
                 <Label Text="Pago Mensual" Grid.Row="4" Grid.Column="0"/>
-                
                 <Button x:Name="btnPagoMensual" Text="Pago Mensual" Clicked="btnPagoMensual_Clicked" Grid.Row="5" Grid.Column="0"/>
 
                 <DatePicker Grid.Row="0" Grid.Column="1"/>
@@ -58,7 +58,8 @@
                 <Button x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked" Grid.Row="5" Grid.Column="1"/>
 
             </Grid>
- <Grid>
+
+            <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -79,6 +80,7 @@
                 <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="1" Grid.Column="2" Keyboard="Numeric"/>
 
             </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
