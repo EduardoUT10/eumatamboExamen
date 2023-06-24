@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eumatamboExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label x:Name="lblUsuario" FontSize="16" TextColor="Red" HorizontalTextAlignment="End"/>
+            <Label Text="REGISTRO" FontSize="20" HorizontalTextAlignment="Center"/>
+
+            <Label/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Fecha" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Pais" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Ciudad" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Monto Inicial" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Pago Mensual" Grid.Row="4" Grid.Column="0"/>
+                
+                <Button x:Name="btnPagoMensual" Text="Pago Mensual" Clicked="btnPagoMensual_Clicked" Grid.Row="5" Grid.Column="0"/>
+
+                <DatePicker Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtPais" Placeholder="Pais" Grid.Row="1" Grid.Column="1"/>
+
+                <Picker x:Name="pPais" Title="Pais" Grid.Row="1" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Mexico</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Entry x:Name="txtCiudad" Placeholder="Ciudad" Grid.Row="2" Grid.Column="1"/>
+
+                <Picker x:Name="pCiudad" Title="Ciudad" Grid.Row="2" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ibarra</x:String>
+                        <x:String>Loja</x:String>
+                        <x:String>Morelia</x:String>
+                        <x:String>Mexico D.F</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="txtMontoInicial" Placeholder="Monto Inicial" TextChanged="txtMontoInicial_TextChanged" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+                <Entry x:Name="txtMontoMensual" Placeholder="Monto Mensual" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+             <!--   <Button x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked" Grid.Row="5" Grid.Column="1"/> -->
+
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Edad" Grid.Row="0" Grid.Column="2"/>
+
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="1" Grid.Column="2" Keyboard="Numeric"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
