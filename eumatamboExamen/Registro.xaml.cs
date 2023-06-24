@@ -43,5 +43,10 @@ namespace eumatamboExamen
             }
             catch (Exception) { }
         }
+
+        private void btnResumen_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
     }
